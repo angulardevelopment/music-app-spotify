@@ -7,11 +7,8 @@ import { Album } from "../Album";
 import { map } from 'rxjs/operators';
 
 @Component({
-
-
     selector: 'album',
-    templateUrl: 'album.component.html',
-    standalone: false
+    templateUrl: 'album.component.html'
 })
 
 export class AlbumComponent {

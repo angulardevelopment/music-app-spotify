@@ -1,18 +1,16 @@
 import { Component , OnInit } from "@angular/core";
 import { SpotifyService } from "../services/spotify.service";
 
-import { ActivatedRoute , Params } from "@angular/router";
+import { ActivatedRoute, Params, RouterLink } from "@angular/router";
 import { Album } from "../Album";
 import { Artist } from "../Artist";
 
 import { map } from 'rxjs/operators';
 
 @Component({
-
-
     selector: 'artist',
     templateUrl: 'artist.component.html',
-    standalone: false
+    imports: [RouterLink]
 })
 
 export class ArtistComponent implements OnInit{

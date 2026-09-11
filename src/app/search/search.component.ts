@@ -1,13 +1,14 @@
 import { Component } from "@angular/core";
 import { Artist } from "../Artist";
 import { SpotifyService } from "../services/spotify.service";
+import { FormsModule } from "@angular/forms";
+import { RouterLink } from "@angular/router";
 
 @Component({
-
     selector: 'search',
     templateUrl: 'search.component.html',
-    providers:[SpotifyService],
-    standalone: false
+    providers: [SpotifyService],
+    imports: [FormsModule, RouterLink]
 })
 
 export class SearchComponent{
